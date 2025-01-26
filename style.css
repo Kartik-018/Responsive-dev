@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    background-color: #fff;
+  }
+  
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure full viewport height */
+  }
+  
+  .login-image {
+    width: 576px;
+    height: 576px;
+    background: transparent url('img/Ellipse 2.png') 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 31px #0000000A;
+    border: 20px solid #FFFFFF;
+    border-radius: 50%;
+    opacity: 1;
+    position: relative;
+    margin-right: 30px; /* Add spacing between image and form */
+  }
+  
+  .h1-index {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 40px;
+    margin: 10px 0;
+    color: #3E3E3E;
+  }
+  
+  .line {
+    font-size: 20px;
+    color: #3e3e3e;
+    margin: 20px 0;
+  }
+  
+  .form {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .fp {
+    font-size: medium;
+    color: #ADADAD;
+  }
+  
+  .span-login {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .ask {
+    margin-top: 10px;
+    font-size: medium;
+    color: #ADADAD;
+    text-align: center;
+  }
+  
+  .button-radius {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  /* Laptop View Adjustments */
+  @media (max-width: 1600px) {
+    .d-flex {
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center;
+        height: 100vh; /* Full height on tablets */
+    }
+  
+    .login-image {
+        /* Image on Laptop screens */
+        width: 400px;
+        background: transparent url('img/Ellipse 2.png') 0% 0% no-repeat padding-box;
+        box-shadow: 0px 4px 31px #0000000A;
+        border: 20px solid #FFFFFF;
+        border-radius: 50%;
+        opacity: 1;
+        position: relative;
+        margin-right: 30px; 
+        height: 400px;
+    }
+  
+    .form {
+        padding: 0 20px;
+    }
+  
+    .h1-index,
+    h3,
+    .line {
+        text-align:left; /* Center text for better readability */
+    }
+  }
+  /* Tablet View Adjustments */
+  @media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column; /* Stack elements vertically */
+        justify-content:left;
+        height: 100vh; /* Full height on tablets */
+    }
+  
+    .login-image {
+        display: none; /* Hide the image on tablet screens */
+    }
+  
+    .form {
+        padding: 0 20px;
+        margin-left: 180px;
+    }
+  
+    .h1-index,
+    h3,
+    .line {
+        text-align: center; /* Center text for better readability */
+    }
+  }
+  
+  /* Mobile View Adjustments */
+  @media (max-width: 430px) {
+    .d-flex {
+        flex-direction: column; /* Ensure content stacks */
+        justify-content: center;
+        height: 100vh; /* Full height on mobile */
+    }
+  
+    .login-image {
+        display: none; /* Hide the image */
+    }
+  
+    .form {
+        padding: 0 20px;
+        margin-left: 0px;
+    }
+  
+    .h1-index,
+    h3,
+    .line {
+        text-align: center; /* Center-align text */
+    }
+  }
+  
+  
+    .modifiedh3{
+      font-size: 40px;
+      margin-top: 20px;
+    }
+    .modifiedh1{
+      font-size: 40px;
+    }
