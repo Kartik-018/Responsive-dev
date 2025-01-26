@@ -277,3 +277,29 @@ body {
           left: 92%; /* Scales dynamically */
       }
   }
+
+
+
+
+
+
+
+  .dashboard-screen {
+    position: relative;
+    margin-left: 242px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    width: calc(100% - 242px); /* Responsive to sidebar */
+    height: 100%;
+    padding: 20px; /* Add spacing */
+}
+
+@media (max-width: 992px) {
+    .dashboard-screen {
+        margin-left: 0; /* Sidebar collapses */
+        width: 100%; /* Full-width on smaller screens */
+    }
+}
+
+.card {
+    margin-bottom: 20px; /* Spacing between cards */
+}
